@@ -1,0 +1,7 @@
+name "renotify"
+description "A tool/library to redirect applications which uses inotify"
+authors "doobnet"
+copyright "Copyright © 2017, doobnet"
+license "BSL-1.0"
+# dflags "-betterC"
+# targetType "dynamicLibrary"
