@@ -18,5 +18,15 @@ immutable void* D8renotify9container5array8__assertFiZv;
 immutable void* D8renotify9container6common8__assertFiZv;
 immutable void* _D8renotify4core7__arrayZ;
 immutable void* _D8renotify8renotify7__arrayZ;
+immutable void* _D12TypeInfo_Aya6__initZ;
+immutable void* _D18TypeInfo_Invariant6__vtblZ;
 immutable void* _d_assert_msg;
 immutable void* __dmd_personality_v0;
+
+void[] _d_arraycopy(size_t size, void[] from, void[] to)
+{
+    import core.stdc.string : memcpy;
+    // enforceRawArraysConformable("copy", size, from, to);
+    memcpy(to.ptr, from.ptr, to.length * size);
+    return to;
+}
