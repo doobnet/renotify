@@ -30,3 +30,8 @@ void[] _d_arraycopy(size_t size, void[] from, void[] to)
     memcpy(to.ptr, from.ptr, to.length * size);
     return to;
 }
+
+void __assert(const char *msg, const char *file, int line)
+{
+    assert(false);
+}
