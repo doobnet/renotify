@@ -6,4 +6,4 @@ if [ -s "$HOME/.dvm/scripts/dvm" ] ; then
 fi
 
 dmd source/config.d source/renotify/*.d \
-  -vcolumns -Isource -fPIC -betterC -shared -oflibrenotify.so $@
+  -vcolumns -Isource -fPIC -betterC -shared -oflibrenotify.so "$@"
